@@ -1,0 +1,21 @@
+.install-note {
+  display: flex;
+  gap: 12px;
+  padding: 13px 15px;
+  margin-top: 16px;
+  background: #0d0e1d;
+  border-left: 3px solid #efad77;
+  color: #c9c6d3;
+  font-size: 11px;
+  line-height: 1.55;
+}
+
+.install-note strong {
+  color: #efbd91;
+  white-space: nowrap;
+}
+
+@media (max-width: 430px) {
+  .install-note { display: block; }
+  .install-note strong { display: block; margin-bottom: 5px; }
+}

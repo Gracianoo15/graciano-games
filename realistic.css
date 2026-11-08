@@ -1,0 +1,34 @@
+/* Dirección visual cinematográfica: recursos locales, sin ilustraciones abstractas. */
+body { background: #090c10; }
+.site-header { position: absolute; width: 100%; border-bottom-color: #ffffff26; background: linear-gradient(#05070bc9, transparent); }
+.hero { position: relative; display: block; min-height: 770px; padding: 210px 12vw 120px; background: linear-gradient(90deg, #05070bea 0%, #05070bbd 39%, #05070b18 80%), url("assets/hero-cinematic.png") center/cover no-repeat; }
+.hero-copy { position: relative; z-index: 2; max-width: 660px; }
+.hero h1 { max-width: 620px; font-size: clamp(56px, 6.7vw, 100px); text-shadow: 0 4px 35px #000; }
+.hero h1 em { color: #f3c28d; }
+.hero .intro { color: #e1e1e5; text-shadow: 0 2px 12px #000; }
+.hero-art { position: absolute; inset: 0; z-index: 1; width: auto; max-width: none; height: auto; border-radius: 0; background: transparent; box-shadow: none; pointer-events: none; }
+.hero-art > :not(p) { display: none; }
+.hero-art p { bottom: 30px; text-align: right; padding-right: 8vw; color: #ffffffb3; }
+.primary { background: #df7d3c; }
+.games { background: #101419; }
+.section-heading > p, .game-info > span { color: #c0c2c6; }
+.game-card { background: #171c22; border: 1px solid #ffffff14; box-shadow: 0 12px 30px #0003; }
+.game-art { height: 300px; background-position: center; background-size: cover; }
+.game-art::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, #070a0e9c, transparent 55%); }
+.game-art > :not(.tag) { display: none; }
+.tag { background: #080b0dd9; border: 1px solid #ffffff2b; }
+.luma .game-art { background-image: url("assets/islas-de-luma-cover.png"); }
+.football .game-art { background-image: url("assets/rivera-football-cover.png"); }
+.chispa .game-art { background-image: url("assets/chispa-cover.png"); }
+.game-info > p { color: #e7a06b; }
+.studio { background: #dfe2df; }
+.contact { background: linear-gradient(105deg, #192a32, #48616a 50%, #b8825c); }
+.contact .eyebrow { color: #d5c9b8; }
+.contact h2 { color: #f9f5ed; }
+.contact h2 em { color: #f3bd87; }
+.contact > a { color: #fff; border-color: #f3bd87; }
+@media (max-width: 800px) {
+  .site-header { position: absolute; }
+  .hero { min-height: 680px; padding: 175px 8vw 90px; background-position: 63% center; }
+  .hero-art p { text-align: center; padding-right: 0; }
+}
